@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Spotipy</title>
+</head>
+<body>
+    <header class="px-20 py-8 bg-[#1DB954]">
+        <h1 class="text-4xl font-semibold text-white">Spotipy</h1>
+    </header>
+
+    <section class="px-20 py-10 grid grid-cols-2 gap-8">
+        <div class="bg-gray-200 p-6 rounded-lg h-fit">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Albums</h2>
+
+            <a href="/album/2k5dZqSsBaI2UoSg8yNOsq" class="block px-6 py-3 bg-gray-100 rounded-lg mb-2 flex justify-between items-center">
+                <span>/album/:<strong>id</strong></span>
+                <span class="text-sm text-gray-600">/album/2k5dZqSsBaI2UoSg8yNOsq</span>
+            </a>
+            <a href="/album/2k5dZqSsBaI2UoSg8yNOsq/tracks" class="block px-6 py-3 bg-gray-100 rounded-lg flex justify-between items-center">
+                <span>/album/:<strong>id</strong>/tracks</span>
+                <span class="text-sm text-gray-600">/album/2k5dZqSsBaI2UoSg8yNOsq/tracks</span>
+            </a>
+        </div>
+        
+        <div class="bg-gray-200 p-6 rounded-lg h-fit">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Artists</h2>
+
+            <a href="/artist/2UwqpfQtNuhBwviIC0f2ie" class="block px-6 py-3 bg-gray-100 rounded-lg mb-2 flex justify-between items-center">
+                <span>/artist/:<strong>id</strong></span>
+                <span class="text-sm text-gray-600">/artist/2UwqpfQtNuhBwviIC0f2ie</span>
+            </a>
+            <a href="/artist/2UwqpfQtNuhBwviIC0f2ie/albums" class="block px-6 py-3 bg-gray-100 rounded-lg mb-2 flex justify-between items-center">
+                <span>/artist/:<strong>id</strong>/albums</span>
+                <span class="text-sm text-gray-600">/artist/2UwqpfQtNuhBwviIC0f2ie/albums</span>
+            </a>
+            <a href="/artist/2UwqpfQtNuhBwviIC0f2ie/top-tracks" class="block px-6 py-3 bg-gray-100 rounded-lg flex justify-between items-center">
+                <span>/artist/:<strong>id</strong>/top-tracks</span>
+                <span class="text-sm text-gray-600">/artist/2UwqpfQtNuhBwviIC0f2ie/top-tracks</span>
+            </a>
+        </div>
+        
+        <div class="bg-gray-200 p-6 rounded-lg h-fit">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Tracks</h2>
+
+            <a href="/track/3MdbKq8mWOW0TB76PbcjnD" class="block px-6 py-3 bg-gray-100 rounded-lg flex justify-between items-center">
+                <span>/track/:<strong>id</strong></span>
+                <span class="text-sm text-gray-600">/track/3MdbKq8mWOW0TB76PbcjnD</span>
+            </a>
+        </div>
+        
+        <div class="bg-gray-200 p-6 rounded-lg h-fit">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Search</h2>
+
+            <a href="/search/album/Commando" class="block px-6 py-3 bg-gray-100 rounded-lg mb-2 flex justify-between items-center">
+                <span>/search/album/:<strong>name</strong></span>
+                <span class="text-sm text-gray-600">/search/album/Commando</span>
+            </a>
+            <a href="/search/album/Commando/5" class="block px-6 py-3 bg-gray-100 rounded-lg mb-2 flex justify-between items-center">
+                <span>/search/album/:<strong>name</strong>/:<strong>limit</strong></span>
+                <span class="text-sm text-gray-600">/search/album/Commando/5</span>
+            </a>
+
+            <a href="/search/artist/Nekfeu" class="block px-6 py-3 bg-gray-100 rounded-lg mb-2 flex justify-between items-center">
+                <span>/search/artist/:<strong>name</strong></span>
+                <span class="text-sm text-gray-600">/search/artist/Nekfeu</span>
+            </a>
+            <a href="/search/artist/Nekfeu/1" class="block px-6 py-3 bg-gray-100 rounded-lg mb-2 flex justify-between items-center">
+                <span>/search/artist/:<strong>name</strong>/:<strong>limit</strong></span>
+                <span class="text-sm text-gray-600">/search/artist/Nekfeu/1</span>
+            </a>
+
+            <a href="/search/track/Peur" class="block px-6 py-3 bg-gray-100 rounded-lg mb-2 flex justify-between items-center">
+                <span>/search/track/:<strong>name</strong></span>
+                <span class="text-sm text-gray-600">/search/track/Peur</span>
+            </a>
+            <a href="/search/track/Peur/15" class="block px-6 py-3 bg-gray-100 rounded-lg flex justify-between items-center">
+                <span>/search/track/:<strong>name</strong>/:<strong>limit</strong></span>
+                <span class="text-sm text-gray-600">/search/track/Peur/15</span>
+            </a>
+        </div>
+    </section>
+</body>
+</html>
